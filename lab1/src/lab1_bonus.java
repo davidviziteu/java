@@ -17,7 +17,7 @@ public class lab1_bonus {
             ++i;
             Queue.add(root.right);
 
-            if(rand.nextInt(2) == 1){
+            if(rand.nextInt(2) == 1 && i < nodes){
                 root.left = new node(root.level + 1);
                 ++i;
                 Queue.add(root.left);
