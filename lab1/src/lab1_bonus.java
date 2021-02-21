@@ -5,6 +5,8 @@ import java.util.LinkedList;
 import tree_node.*;
 
 public class lab1_bonus {
+    public static int MAX_SONS = 5;
+    public static int MAX_NODES = 50;
     public static node generate_tree(int nodes){
         Queue<node> Queue = new LinkedList<>();
         var rand = new Random();
@@ -13,14 +15,12 @@ public class lab1_bonus {
         var final_tree = root;
         var i = 1;
         while(i < nodes){
-            root.right = new node(root.level + 1) ;
-            ++i;
-            Queue.add(root.right);
-
-            if(rand.nextInt(2) == 1 && i < nodes){
-                root.left = new node(root.level + 1);
+            var nr_of_sons = rand.nextInt(MAX_SONS);
+            for(var k = 0; k < nr_of_sons; ++k) {
+                var new_son = new node(root.level + 1);
+                root.sons.add(new_son);
                 ++i;
-                Queue.add(root.left);
+                Queue.add(new_son);
             }
             root = Queue.remove();
         }
@@ -30,12 +30,11 @@ public class lab1_bonus {
     public static void print_tree(node root){
         if(root != null) {
             print_tabs(root.level);
-            if(root.left == root.right && root.left == null)
+            if(root.sons.isEmpty())
                 System.out.println("-node" + number++);
             else {
                 System.out.println("+node" + number++);
-                print_tree(root.left);
-                print_tree(root.right);
+                root.sons.forEach(lab1_bonus::print_tree);
             }
         }
     }
@@ -46,7 +45,7 @@ public class lab1_bonus {
     }
     public static void main(String[] args) {
         var rand = new Random();
-        var tree_nodes = 3 + rand.nextInt(50);
+        var tree_nodes = 3 + rand.nextInt(MAX_NODES);
         System.out.println("the tree has " + tree_nodes + " nodes");
         var tree = generate_tree(tree_nodes);
         print_tree(tree);
