@@ -1,7 +1,5 @@
 # java
 
-can i restructe and reupload the project?
-
 FOR LAB1:
 
 compulsory part: lab1/src/lab1.java
