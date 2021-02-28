@@ -4,6 +4,9 @@ package optional;
 import compulsory.Destination;
 import java.util.ArrayList;
 
+/**
+ * main class for the optional to be demonstrated
+ */
 public class Main {
     public static void main(String[] args) {
         int[][] costMatrix1 = {{2, 3, 1}, {5, 4, 8}, {5, 6, 8}};

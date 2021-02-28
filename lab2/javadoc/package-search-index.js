@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"bonus"},{"l":"compulsory"},{"l":"optional"}];updateSearchResults();
