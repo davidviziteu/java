@@ -17,7 +17,6 @@ public class Church extends Location implements Classifiable {
 
     }
 
-    @Override
     public void setRank(int rank) {
         this.rank = rank;
     }

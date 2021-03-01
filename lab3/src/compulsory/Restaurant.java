@@ -17,7 +17,6 @@ public class Restaurant extends Location implements Payable {
 
     }
 
-    @Override
     public void setEntryFee(int entryFee) {
         this.entryFee = entryFee;
 

@@ -6,8 +6,8 @@ import java.time.LocalTime;
 public class Main {
     public static void main(String[] args) {
         var v1 = new Hotel("Hotel", 15);
-        var v2 = new Museum("Museum A", LocalTime.parse("9:00"));
-        var v3 = new Museum("Museum B", LocalTime.parse("9:30"));
+        var v2 = new Museum("Museum A", LocalTime.of(9, 30));
+        var v3 = new Museum("Museum B", LocalTime.of(9, 00));
         var v4 = new Church("Church A", 2);
         var v5 = new Church("Church B", 1);
         var v6 = new Restaurant("Restaurant", 16);

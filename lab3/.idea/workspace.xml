@@ -2,22 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d1b4cc6-84df-479d-ba4e-2487b91daa2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compulsory/Church.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compulsory/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compulsory/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compulsory/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compulsory/Museum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compulsory/Restaurant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compulsory/baseClasses/Classifiable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compulsory/baseClasses/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compulsory/baseClasses/Payable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compulsory/baseClasses/Visitable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab1/lab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/lab1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab1/src/lab1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/src/lab1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab2/src/bonus/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/src/bonus/GeneticAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/compulsory/Church.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/compulsory/Church.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/compulsory/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/compulsory/Hotel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/compulsory/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/compulsory/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/compulsory/Museum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/compulsory/Museum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/compulsory/Restaurant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/compulsory/Restaurant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/compulsory/baseClasses/Classifiable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/compulsory/baseClasses/Classifiable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/compulsory/baseClasses/Payable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/compulsory/baseClasses/Payable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/compulsory/baseClasses/Visitable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/compulsory/baseClasses/Visitable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compulsory/Church.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/compulsory/Church.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compulsory/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/compulsory/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compulsory/Museum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/compulsory/Museum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compulsory/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/compulsory/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compulsory/baseClasses/Classifiable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/compulsory/baseClasses/Classifiable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compulsory/baseClasses/Payable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/compulsory/baseClasses/Payable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compulsory/baseClasses/Visitable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/compulsory/baseClasses/Visitable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,15 +82,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,7 +110,8 @@
       <workItem from="1614528370700" duration="1255000" />
       <workItem from="1614541998976" duration="821000" />
       <workItem from="1614544635048" duration="4330000" />
-      <workItem from="1614549182353" duration="2299000" />
+      <workItem from="1614549182353" duration="2673000" />
+      <workItem from="1614580927060" duration="113000" />
     </task>
     <servers />
   </component>

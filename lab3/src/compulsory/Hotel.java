@@ -15,7 +15,6 @@ public class Hotel extends Location implements Payable {
         return entryFee;
     }
 
-    @Override
     public void setEntryFee(int entryFee) {
         this.entryFee = entryFee;
 

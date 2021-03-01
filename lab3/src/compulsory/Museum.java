@@ -9,7 +9,6 @@ import java.time.LocalTime;
 public class Museum extends Location implements Visitable {
     LocalTime openingHours;
 
-    @Override
     public LocalTime setOpeningHours(LocalTime hrs) {
         return openingHours = hrs;
     }
