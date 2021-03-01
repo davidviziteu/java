@@ -1,19 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d1b4cc6-84df-479d-ba4e-2487b91daa2b" name="Default Changelist" comment="" />
+    <list default="true" id="5d1b4cc6-84df-479d-ba4e-2487b91daa2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compulsory/Church.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compulsory/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compulsory/Hotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compulsory/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compulsory/Museum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compulsory/Restaurant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compulsory/baseClasses/Classifiable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compulsory/baseClasses/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compulsory/baseClasses/Payable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compulsory/baseClasses/Visitable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/lab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/lab1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/src/lab1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/src/lab1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/src/bonus/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/src/bonus/GeneticAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1p7JoF5N6E3wiygtd2YSXXDFTjl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="compulsory.Main" />
+      <module name="lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="compulsory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5d1b4cc6-84df-479d-ba4e-2487b91daa2b" name="Default Changelist" comment="" />
@@ -21,7 +105,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614528369376</updated>
+      <workItem from="1614528370700" duration="1255000" />
+      <workItem from="1614541998976" duration="821000" />
+      <workItem from="1614544635048" duration="4330000" />
+      <workItem from="1614549182353" duration="2299000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/compulsory/Main.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="Location.travelTimes" language="JAVA" custom="compulsory.baseClasses.Location" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
