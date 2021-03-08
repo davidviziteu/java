@@ -5,8 +5,8 @@ import compulsory.baseClasses.Location;
 import java.util.*;
 
 public class City {
-    List<Location> locationList = new ArrayList<Location>();
-    String name;
+    protected List<Location> locationList = new ArrayList<Location>();
+    protected String name;
     public City(String name){
         this.name = name;
     }
@@ -34,5 +34,12 @@ public class City {
                 "name=" + name +
                 "\nlocation map:\n" + locationMap +
                 "}";
+    }
+    public int getLocationIdx(Location l){
+        for(var i = 0; i < locationList.size(); ++i){
+            if(locationList.get(i).equals(l))
+                return i;
+        }
+        return -1;
     }
 }
