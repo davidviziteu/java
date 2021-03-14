@@ -41,9 +41,9 @@ public class Problem {
         Map<Student, List<School>> studPrefs = new HashMap<>();
         Map<School, List<Student>> schoolPrefs = new TreeMap<>();
 
-        var faker = new Faker();
-        Arrays.stream(students).forEach(s -> s.setName(faker.name().fullName()));
-        Arrays.stream(schools).forEach(s -> s.setName(faker.beer().name()));
+//        var faker = new Faker();
+//        Arrays.stream(students).forEach(s -> s.setName(faker.name().fullName()));
+//        Arrays.stream(schools).forEach(s -> s.setName(faker.beer().name()));
 
         Arrays.stream(students).forEach(s -> studPrefs.put(s, s.getPreferredSchools()));
         Arrays.stream(schools).forEach(s -> schoolPrefs.put(s, s.getSudentPref()));
@@ -57,6 +57,7 @@ public class Problem {
 
         //stream api:
 //        Arrays.stream(students).forEach(...);
-
+        var solutionInstance = new Solution(studentList, schoolSet);
+        solutionInstance.printSolution();
     }
 }
