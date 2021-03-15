@@ -5,6 +5,7 @@ import compulsory.School;
 import compulsory.Student;
 
 import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Problem {
@@ -55,8 +56,24 @@ public class Problem {
         System.out.println("School preferences:");
         schoolPrefs.forEach((key, value) -> System.out.println(key + ": " + value));
 
-        //stream api:
-//        Arrays.stream(students).forEach(...);
+        // pt fiecare scoala sa vad daca un student o vrea
+        // pt fiecare student sa vad daca se afla macar la o scoala
+        schoolSet.forEach(school -> {
+            var result = studentList.stream()
+                    .filter(std -> std.getPreferredSchools().contains(school))
+                    .collect(Collectors.toList());
+
+            System.out.println("School " + school.toString() + " wanted by: " + result.toString());
+
+        });
+        studentList.forEach(student -> {
+            var result = schoolSet.stream()
+                    .filter(std -> std.getSudentPref().contains(student))
+                    .collect(Collectors.toList());
+
+            System.out.println("Student " + student.toString() + " wants the students: " + result.toString());
+        });
+        System.out.println();
         var solutionInstance = new Solution(studentList, schoolSet);
         solutionInstance.printSolution();
     }
