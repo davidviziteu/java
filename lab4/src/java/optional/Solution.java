@@ -37,6 +37,14 @@ public class Solution {
             }
             System.out.println();
         });
+        if(studentList.size() != assignedStudents.size()){
+            System.out.println("Unassigned students:");
+            for (Student student : studentList) {
+                if(!assignedStudents.contains(student)){
+                    System.out.print(student.getName());
+                }
+            }
+        }
 
     }
 }
