@@ -16,10 +16,12 @@ public class CityOptional extends City {
     public void displayVisitableByOpeningHrs(){
         var visitables = new ArrayList<Location>(locationList);
         visitables.clear();
+
         this.locationList.forEach(l -> {
             if( l instanceof Visitable && !(l instanceof Payable))
                 visitables.add(l);
         });
+
         visitables.sort((a, b) -> {
             var aa = (Visitable) a;
             var bb = (Visitable) b;

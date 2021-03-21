@@ -1,2 +1,4 @@
-package bonus;public class GeneticAlgorithm {
+package bonus;
+
+public class GeneticAlgorithm {
 }

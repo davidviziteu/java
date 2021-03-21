@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e1bbcbb8-2a2e-44d5-a08e-a470ee5ae14e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../lab5/.idea/artifacts/lab5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/src/main/java/optional/AddCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/src/main/java/optional/CatalogOptional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/src/main/java/optional/ListCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/src/main/java/optional/LoadCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/src/main/java/optional/MainOptional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/src/main/java/optional/PlayCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/src/main/java/optional/ReportCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/src/main/java/optional/SaveCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/src/main/java/optional/generalCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab5/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/lab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/lab1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/src/lab1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/src/lab1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab2/src/bonus/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/src/bonus/GeneticAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/out/production/lab3/optional/CityOptional.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/out/production/lab3/optional/CityOptional.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/out/production/lab3/optional/TravelPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/out/production/lab3/optional/TravelPlan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/src/optional/CityOptional.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/src/optional/CityOptional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3/src/optional/TravelPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/src/optional/TravelPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/src/main/java/compulsory/InvalidData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/src/main/java/compulsory/InvalidData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/src/main/java/compulsory/Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/src/main/java/compulsory/Picture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled/src/main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1q5Eo5hdVSIYe7orW369dgclnAN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1bbcbb8-2a2e-44d5-a08e-a470ee5ae14e" name="Default Changelist" comment="" />
+      <created>1616361224708</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616361224708</updated>
+      <workItem from="1616361226023" duration="97000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

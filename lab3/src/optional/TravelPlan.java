@@ -28,6 +28,7 @@ public class TravelPlan {
             }
             System.out.println();
         }
+        // intai preferinte si apoi cost
     }
 
     public void computeShortestPath(Location l1, Location l2){

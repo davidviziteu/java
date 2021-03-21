@@ -4,16 +4,16 @@ public class lab1 {
         String[] languages = {"C", "C++", "C#", "Python", "Go", "Rust", "JavaScript", "PHP", "Swift", "Java"};
         int n = (int) (Math.random() * 1000000);
         n *= 3;
-        String binaryString="10101";
+        String binaryString = "10101";
         n += Integer.parseInt(binaryString, 2);
-        String hexaString="FF";
+        String hexaString = "FF";
         n += Integer.parseInt(hexaString, 16);
         n *= 6;
         int result = n;
-        while(result != result % 10){
+        while (result != result % 10) {
             n = result;
             result = 0;
-            while(n != 0){
+            while (n != 0) {
                 result += n % 10;
                 n /= 10;
             }

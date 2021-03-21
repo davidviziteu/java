@@ -2,28 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d1b4cc6-84df-479d-ba4e-2487b91daa2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/optional/CityOptional.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/optional/TravelPlan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab4/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab4/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab4/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab4/lab4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab4/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab4/src/compulsory/School.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab4/src/compulsory/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab1/lab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/lab1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab1/src/lab1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/src/lab1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab2/src/bonus/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab2/src/bonus/GeneticAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/compulsory/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/compulsory/City.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/compulsory/Museum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/compulsory/Museum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/compulsory/baseClasses/Visitable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/compulsory/baseClasses/Visitable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compulsory/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/compulsory/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compulsory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compulsory/Museum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/compulsory/Museum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compulsory/baseClasses/Visitable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/compulsory/baseClasses/Visitable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/optional/CityOptional.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/optional/CityOptional.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab3/optional/TravelPlan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/optional/TravelPlan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optional/CityOptional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/optional/CityOptional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/optional/TravelPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/optional/TravelPlan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +72,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -109,6 +107,7 @@
       <workItem from="1614961500754" duration="106000" />
       <workItem from="1615035224103" duration="6748000" />
       <workItem from="1615122851952" duration="13779000" />
+      <workItem from="1615184224995" duration="2135000" />
     </task>
     <servers />
   </component>
@@ -137,61 +136,6 @@
           <url>file://$PROJECT_DIR$/src/Main.java</url>
           <line>33</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/optional/CityOptional.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/optional/CityOptional.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/optional/CityOptional.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/optional/CityOptional.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/optional/CityOptional.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/optional/CityOptional.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/optional/CityOptional.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/optional/CityOptional.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/optional/CityOptional.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/optional/CityOptional.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/optional/CityOptional.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
