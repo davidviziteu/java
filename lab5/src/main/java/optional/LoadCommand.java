@@ -7,8 +7,16 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class LoadCommand {
-    static public void load(CatalogOptional o, String fromFilePath) throws IOException, RuntimeException {
+public class LoadCommand implements generalCommand{
+    CatalogOptional o;
+    String fromFilePath;
+    public LoadCommand(CatalogOptional o, String fromFilePath) {
+        this.o = o;
+        this.fromFilePath = fromFilePath;
+    }
+
+    @Override
+    public void execute() throws IOException, RuntimeException{
         File f = new File(fromFilePath);
         if(f.exists() && !f.isDirectory()){
             BufferedReader in = new BufferedReader(new FileReader(fromFilePath));

@@ -8,8 +8,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import static optional.AddCommand.addThing;
-import static optional.ListCommand.listThings;
+
 public class MainOptional {
     public static void main(String[] args) {
         var desktop = Desktop.getDesktop();
@@ -28,7 +27,8 @@ public class MainOptional {
                     System.out.println("enter song path:");
                     String songPath = in.readLine();
                     var newSong = new Song(songName, songPath);
-                    addThing(catalog, newSong);
+                    var addObj = new AddCommand(catalog, newSong);
+                    addObj.execute();
                     System.out.println("ok");
                     continue;
 
@@ -40,30 +40,35 @@ public class MainOptional {
                     System.out.println("enter picture path:");
                     String picturePath = in.readLine();
                     var newPic = new Picture(pictureName, picturePath);
-                    addThing(catalog, newPic);
+                    var addObj = new AddCommand(catalog, newPic);
+                    addObj.execute();
                     System.out.println("ok");
                     continue;
                 }
                 if(text.equals("list")) {
-                    listThings(catalog);
+                    var listObj = new ListCommand(catalog);
+                    listObj.execute();
                     continue;
                 }
                 if(text.equals("play")) {
                     System.out.println("enter item name:");
                     String itemName = in.readLine();
-                    PlayCommand.playThing(catalog, itemName);
+                    var playObj = new PlayCommand(catalog, itemName);
+                    playObj.execute();
                     continue;
                 }
                 if(text.equals("save")) {
                     System.out.println("enter destination file path:");
                     String dest = in.readLine();
-                    SaveCommand.saveThing(catalog, dest);
+                    var saveObj = new SaveCommand(catalog, dest);
+                    saveObj.execute();
                     continue;
                 }
                 if(text.equals("load")) {
                     System.out.println("enter source file path:");
                     String src = in.readLine();
-                    LoadCommand.load(catalog, src);
+                    var loadObj = new LoadCommand(catalog, src);
+                    loadObj.execute();
                     continue;
                 }
                 System.out.println("Invalid command");

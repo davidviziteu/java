@@ -4,12 +4,20 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class SaveCommand extends generalCommand{
-    static public void saveThing(CatalogOptional o, String fileName){
+public class SaveCommand implements generalCommand {
+    CatalogOptional o;
+    String fileName;
+     public SaveCommand(CatalogOptional o, String fileName){
+        this.o = o;
+        this.fileName = fileName;
+    }
+
+    @Override
+    public void execute() throws IOException, RuntimeException {
         try {
             File f = new File(fileName);
             if (f.createNewFile()) {
-               o.items.forEach(i ->{
+                o.items.forEach(i ->{
                     try {
                         FileWriter w = new FileWriter(fileName);
                         w.write(i.getName() + " " + i.getClass().getName() + " " + i.getPath());

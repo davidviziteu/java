@@ -1,7 +1,8 @@
 package optional;
 import compulsory.CatalogItem;
 
-public abstract class generalCommand {
-    public void thisClassIsEffectivelyUseless() {
-    }
+import java.io.IOException;
+
+public interface generalCommand  {
+    void execute() throws IOException, RuntimeException;
 }

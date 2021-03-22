@@ -1,7 +1,16 @@
 package optional;
 
-public class ListCommand extends generalCommand{
-    static public void listThings(CatalogOptional o){
+import java.io.IOException;
+
+public class ListCommand implements generalCommand{
+    CatalogOptional o;
+    public  ListCommand(CatalogOptional o){
+        this.o = o;
+
+    }
+
+    @Override
+    public void execute() throws IOException, RuntimeException {
         if(o.items.size() == 0) {
             System.out.println("No items in catalog");
             return;
