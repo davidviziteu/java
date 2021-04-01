@@ -3,7 +3,20 @@ package compulsory;
 import java.util.Random;
 
 public class Token {
-    int x, y, value;
+    private int x, y, value;
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
     public Token(){
         x = 0;
         y = 0;
