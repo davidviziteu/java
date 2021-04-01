@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import javafx.embed.swing.SwingFXUtils;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.canvas.Canvas;
@@ -18,6 +17,7 @@ import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Shape;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -41,7 +41,7 @@ public class ControllerOptional implements Initializable {
     @FXML
     ChoiceBox<String> choiceBox;
     @FXML
-    AnchorPane drawingArea;
+    AnchorPane clickArea;
     @FXML
     Button exitButton;
     @FXML
@@ -50,9 +50,28 @@ public class ControllerOptional implements Initializable {
     Label polySidesLabel;
     @FXML
     Canvas drawingCanvas;
+    @FXML
+    ToggleButton eraseToggle;
 
     public void setColor(ActionEvent e){
         shapeColor = colorPicker.getValue();
+    }
+    public void freeDrawing() { Shape point = new Circle();
+        GraphicsContext g = drawingCanvas.getGraphicsContext2D();
+        drawingCanvas.setOnMouseDragged(event -> {
+            double size = shapeSize.getValue();
+            double x = event.getX();
+            double y = event.getY();
+            if(eraseToggle.isSelected()){
+                g.clearRect(x,y,size,size);
+            }
+            else{
+                System.out.println("drawing");
+                g.setFill(colorPicker.getValue());
+                g.fillRect(x,y, size,size);
+            }
+        });
+
     }
 
     public void setShape(ActionEvent e){
@@ -66,6 +85,7 @@ public class ControllerOptional implements Initializable {
             polySidesLabel.setVisible(false);
             drawingCanvas.setVisible(false);
             polySides.setVisible(false);
+            eraseToggle.setVisible(false);
             return;
         }
         if(choiceBox.getValue().equals("Polygon")){
@@ -77,47 +97,15 @@ public class ControllerOptional implements Initializable {
             polySidesLabel.setVisible(true);
             drawingCanvas.setVisible(false);
             polySides.setVisible(true);
+            eraseToggle.setVisible(false);
         }
-        if(choiceBox.getValue().equals("FreeDraw")){
-            shapeSizeLabel.setText("Line size");
+        if(choiceBox.getValue().equals("FreeDrawing")) {
             drawingCanvas.setVisible(true);
             shapeSize.setVisible(true);
-            shapeSizeLabel.setVisible(true);
-            polySidesLabel.setVisible(false);
-            polySides.setVisible(false);
-
-
-            final GraphicsContext graphicsContext = drawingCanvas.getGraphicsContext2D();
-            initDraw(graphicsContext);
-
-            drawingCanvas.addEventHandler(MouseEvent.MOUSE_PRESSED,
-                    new EventHandler<MouseEvent>(){
-                        @Override
-                        public void handle(MouseEvent event) {
-                            graphicsContext.beginPath();
-                            graphicsContext.moveTo(event.getX(), event.getY());
-                            graphicsContext.stroke();
-                        }
-                    });
-
-            drawingCanvas.addEventHandler(MouseEvent.MOUSE_DRAGGED,
-                    new EventHandler<MouseEvent>(){
-                        @Override
-                        public void handle(MouseEvent event) {
-                            graphicsContext.lineTo(event.getX(), event.getY());
-                            graphicsContext.stroke();
-                        }
-                    });
-
-            drawingCanvas.addEventHandler(MouseEvent.MOUSE_RELEASED,
-                    new EventHandler<MouseEvent>(){
-                        @Override
-                        public void handle(MouseEvent event) {
-
-                        }
-                    });
+            eraseToggle.setVisible(true);
+            System.out.println("free drawing selected");
+            freeDrawing();
         }
-
     }
 
     public void handleShape(MouseEvent event) {
@@ -128,28 +116,19 @@ public class ControllerOptional implements Initializable {
                 shapeSizeLabel.setVisible(false);
                 polySidesLabel.setVisible(false);
                 polySides.setVisible(false);
-                if(event.getEventType() == MouseEvent.MOUSE_DRAGGED){
-                    var circle = new javafx.scene.shape.Circle();
-                    circle.setRadius(3);
-                    circle.setCenterX(event.getSceneX());
-                    circle.setCenterY(event.getSceneY());
-                    circle.setFill(shapeColor);
-                    drawingArea.getChildren().add(circle);
-                }
             }
             else
             if(event.getButton() == MouseButton.PRIMARY && choiceBox.getValue() != null) {
                 var customShape = ShapeFactory.newShape(choiceBox.getValue(), (int) shapeSize.getValue(), event, polySides);
-                assert customShape != null;
                 customShape.setFill(shapeColor);
-                if (event.getY() + (int) shapeSize.getValue() < drawingArea.getHeight()) {
-                    drawingArea.getChildren().add(customShape);
+                if (event.getY() + (int) shapeSize.getValue() < clickArea.getHeight()) {
+                    clickArea.getChildren().add(customShape);
                     drawnShapes.add(customShape);
                 }
                 customShape.setOnMouseClicked(evt -> {
                     if (evt.getButton() == MouseButton.SECONDARY) {
                         evt.consume();
-                        drawingArea.getChildren().remove(customShape);
+                        clickArea.getChildren().remove(customShape);
                         drawnShapes.remove(customShape);
                     }
                 });
@@ -160,39 +139,45 @@ public class ControllerOptional implements Initializable {
     }
 
     public void saveButtonOnAction(ActionEvent event) throws IOException {
+
         FileChooser fileChooser = new FileChooser();
         fileChooser.setInitialDirectory(new File("C:"));
-        Window stage = drawingArea.getScene().getWindow();
+        Window stage = clickArea.getScene().getWindow();
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("PNG files (.png)", ".png");
         fileChooser.getExtensionFilters().add(extFilter);
 
         File file = fileChooser.showSaveDialog(stage);
 
-        WritableImage writableImage = new WritableImage((int) drawingArea.getWidth(), (int) drawingArea.getHeight());
-        drawingArea.snapshot(null, writableImage);
-        ImageIO.write(SwingFXUtils.fromFXImage(writableImage, null), ".png", file);
-        System.out.println("snapshot saved: " + file.getAbsolutePath());
+            WritableImage writableImage = new WritableImage((int) clickArea.getWidth(), (int) clickArea.getHeight());
+            clickArea.snapshot(null, writableImage);
+
+            ImageIO.write(SwingFXUtils.fromFXImage(writableImage, null), "png", file);
+            System.out.println("snapshot saved: " + file.getAbsolutePath());
 
     }
+
     public void loadButtonOnAction(ActionEvent event) throws IOException {
         FileChooser fileChooser = new FileChooser();
         Window canvas;
-        Window stage = drawingArea.getScene().getWindow();
+        Window stage = clickArea.getScene().getWindow();
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("PNG files", ".png");
         fileChooser.getExtensionFilters().add(extFilter);
 
         File file = fileChooser.showOpenDialog(stage);
         fileChooser.setInitialDirectory(new File("C:\""));
         ImageView imageView = new ImageView(String.valueOf(file.toURI()));
-        drawingArea.getChildren().add(imageView);
+        clickArea.getChildren().add(imageView);
     }
+
     public void exitButtonOnAction(ActionEvent event) {
         Stage stage = (Stage) exitButton.getScene().getWindow();
         stage.close();
     }
+
     public void resetButton(ActionEvent event){
-        drawingArea.getChildren().clear();
+        clickArea.getChildren().clear();
     }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         choiceBox.getItems().add("Circle");
@@ -205,25 +190,6 @@ public class ControllerOptional implements Initializable {
         drawingCanvas.setVisible(false);
     }
 
-    private void initDraw(GraphicsContext gc){
-        double canvasWidth = gc.getCanvas().getWidth();
-        double canvasHeight = gc.getCanvas().getHeight();
 
-        gc.setFill(Color.LIGHTGRAY);
-        gc.setStroke(Color.BLACK);
-        gc.setLineWidth(5);
-
-        gc.fill();
-        gc.strokeRect(
-                0,              //x of the upper left corner
-                0,              //y of the upper left corner
-                canvasWidth,    //width of the rectangle
-                canvasHeight);  //height of the rectangle
-
-        gc.setFill(Color.RED);
-        gc.setStroke(Color.BLUE);
-        gc.setLineWidth(1);
-
-    }
 }
 
