@@ -16,7 +16,7 @@ public class GameOptional {
         var bot = newBotPlayer().setPlayerName("Bot Boris");
         var playerList = new ArrayList<PlayerOptional>();
         var timekeeper = TimeKeeper.getInstance();
-        timekeeper.setTime(200);
+        timekeeper.setTime(2);
         playerList.add(eu);
         playerList.add(bot);
         var t1 = new Thread(eu);
@@ -28,8 +28,8 @@ public class GameOptional {
         t2.start();
         try{
             t3.join();
-            t1.interrupt();
-            t2.interrupt();
+            t1.join();
+            t2.join();
         } catch (InterruptedException e){
             System.out.println(e.getMessage());
         }
