@@ -23,3 +23,4 @@ CREATE TABLE association(
 id_movie INT references movie(id),
 id_genres INT references genres(id)
 )
+/
