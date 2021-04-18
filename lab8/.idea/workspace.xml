@@ -5,18 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="423e09dd-381b-49af-844c-ef2f5ad15729" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Director.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Genre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/compulsory/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab8.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/STUDENT.Gw7Kug.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/STUDENT.Gw7Kug.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/compulsory/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compulsory/DataBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/compulsory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compulsory/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab84/lab84.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8maven/lab8maven.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/Base.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/Derivated.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/compulsory/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compulsory/DataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/compulsory/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compulsory/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +38,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1rBBzfoUSfwFu7tcjj2JdhiJ2sg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="oracle" />
+    <property name="DatabaseDriversLRU" value="oracle&#10;oracle.19" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -52,6 +58,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -59,7 +66,7 @@
       <module name="lab8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="compulsory.*" />
+          <option name="PATTERN" value="Model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,7 +99,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618439872984</updated>
-      <workItem from="1618439874328" duration="2911000" />
+      <workItem from="1618439874328" duration="5535000" />
+      <workItem from="1618749208141" duration="8008000" />
+      <workItem from="1618765949968" duration="3572000" />
     </task>
     <servers />
   </component>
@@ -109,5 +118,62 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/compulsory/DataBase.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/compulsory/Main.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/compulsory/Main.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/compulsory/Main.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/compulsory/Main.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/compulsory/Main.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/compulsory/Main.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/compulsory/Main.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/compulsory/Main.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/compulsory/Main.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
