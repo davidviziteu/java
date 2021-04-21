@@ -3,11 +3,11 @@ package Model;
 import java.sql.Date;
 
 public class Movie {
-    int id;
-    String title;
-    Date releaseDate;
-    int duration;
-    int score;
+    private int id;
+    private String title;
+    private Date releaseDate;
+    private int duration;
+    private double score;
 
     public Movie(int id, String title, Date releaseDate, int duration, int score)
     {
@@ -17,6 +17,8 @@ public class Movie {
         this.duration = duration;
         this.score = score;
     }
+
+    public Movie(){}
 
     public int getId()
     {
@@ -58,12 +60,12 @@ public class Movie {
         this.duration = duration;
     }
 
-    public int getScore()
+    public double getScore()
     {
         return score;
     }
 
-    public void setScore(int score)
+    public void setScore(double score)
     {
         this.score = score;
     }

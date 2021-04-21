@@ -1,11 +1,18 @@
 package Model;
 
 public class Genre {
-    int id;
-    String name;
+    private int id;
+    private String name;
 
     public Genre(int id, String name) {
         this.id = id;
+        this.name = name;
+    }
+
+    public Genre() {
+    }
+
+    public Genre(String name) {
         this.name = name;
     }
 

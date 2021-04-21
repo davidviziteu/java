@@ -2,31 +2,29 @@ package compulsory;
 
 
 import java.sql.*;
-import java.util.Map;
-import java.util.Properties;
-import java.util.concurrent.Executor;
 
 public class DataBase {
     static Connection db = null;
-    static DataBase instance = null;
 
-    static public Connection getInstance(){
-        if(db == null)
-            new DataBase();
-        return db;
-    }
-
-    DataBase(){
-        try{
-            db = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1522:orcl", "c##STUDENT", "STUDENT");
-        }catch (SQLException throwables) {
-            throwables.printStackTrace();
+    static public Connection getInstance() {
+        if (db != null) {
+            return db;
         }
+        try {
+            Class.forName("org.sqlite.JDBC");
+            db = DriverManager.getConnection("jdbc:sqlite:D:\\BAZADEDATEORACLE\\SQLITE\\lab9.db");
+        } catch (Exception e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+        System.out.println("Opened database successfully");
+        return db;
+
     }
 
-    public void test(String name){
+    public void test(String name) {
         try {
-            Statement stmt = db.createStatement( );
+            Statement stmt = db.createStatement();
             String sql = "SELECT * FROM STUDENTI";
             ResultSet rs = stmt.executeQuery(sql);
             rs.next();

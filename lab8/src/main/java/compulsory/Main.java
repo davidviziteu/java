@@ -1,12 +1,11 @@
 package compulsory;
 
 
+import Model.Actor;
 import Model.Genre;
 import Model.Movie;
-import com.sun.jdi.connect.spi.Connection;
 
 import java.sql.Date;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Main {
@@ -17,6 +16,7 @@ public class Main {
         var movie3 = new Movie(2, "stiu", new Date(System.currentTimeMillis()), 100, 10);
         var movie4 = new Movie(3, "alte", new Date(System.currentTimeMillis()), 100, 10);
         var movie5 = new Movie(4, "filme", new Date(System.currentTimeMillis()), 100, 10);
+
         DAO.insertMovie(db, movie1);
         DAO.insertMovie(db, movie2);
         DAO.insertMovie(db, movie3);
@@ -39,6 +39,15 @@ public class Main {
         DAO.insertAssociation(db, 2, 0);
         DAO.insertAssociation(db, 3, 1);
         DAO.insertAssociation(db, 4, 2);
+
+        //optional
+        var actor1 = new Actor("Andrei","Popescu",18,9.7);
+        var actor2 = new Actor("Bogdan","Ionescu",45,6.5);
+        DAO.insertActor(db, actor1);
+        DAO.insertActor(db, actor2);
+//        DAO.insertActorProduction(db,0,1);
+//        DAO.insertActorProduction(db,0,2);
+
     }
 
 }

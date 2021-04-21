@@ -1,9 +1,14 @@
 package compulsory;
 
+import Model.Actor;
+import Model.Director;
 import Model.Genre;
 import Model.Movie;
 
 import java.sql.*;
+
+import org.sqlite.SQLiteErrorCode;
+import org.sqlite.SQLiteException;
 
 public class DAO {
     public static Genre getGenre(Connection db, int id) throws SQLException {
@@ -41,16 +46,14 @@ public class DAO {
     }
 
     public static void insertGenre(Connection db, Genre newObj) throws SQLException {
-        Statement statement = db.createStatement();
-        String createSql = "INSERT INTO GENRES VALUES (?, ?)";
+        String createSql = "INSERT INTO GENRES  (name) VALUES (?)";
         var createStmt = db.prepareStatement(createSql);
-        createStmt.setInt(1, newObj.getId());
-        createStmt.setString(2, newObj.getName());
+        createStmt.setString(1, newObj.getName());
         try {
             createStmt.execute();
-        } catch (SQLIntegrityConstraintViolationException e) {
-            if (DAO.getGenre(db, newObj.getId()).getName().equals(newObj.getName())) {
-                System.err.println("Object is already in table.");
+        } catch (SQLiteException e) {
+            if (e.getResultCode() == SQLiteErrorCode.SQLITE_CONSTRAINT_UNIQUE) {
+                System.err.println("Genre named " + newObj.getName() + " is already in table.");
             } else {
                 throw e;
             }
@@ -58,34 +61,31 @@ public class DAO {
     }
 
     public static void insertAssociation(Connection db, int id1, int id2) throws SQLException {
-        Statement statement = db.createStatement();
         String createSql = "INSERT INTO ASSOCIATION VALUES (?, ?)";
         var createStmt = db.prepareStatement(createSql);
         createStmt.setInt(1, id1);
         createStmt.setInt(2, id2);
         try {
             createStmt.execute();
-        } catch (SQLIntegrityConstraintViolationException e) {
-//            if (DAO.getGenre(db, newObj.getId()).getName().equals(newObj.getName())) {
-//                System.err.println("Object is already in table.");
-//            } else {
-            throw e;
-//            }
+        } catch (SQLiteException e) {
+            if (e.getResultCode() == SQLiteErrorCode.SQLITE_CONSTRAINT_PRIMARYKEY)
+                System.err.println("Association " + id1 + " <-> " + id2 + " already in the table");
+            else throw e;
         }
     }
 
 
     public static Movie getMovie(Connection db, int id) throws SQLException {
         Statement statement = db.createStatement();
-        ResultSet set = statement.executeQuery("SELECT * FROM MOVIE WHERE ID = " + id);
-        if(set.next())
-        return new Movie(
-                set.getInt("id"),
-                set.getString("title"),
-                set.getDate("release_date"),
-                set.getInt("duration"),
-                set.getInt("score")
-        );
+        ResultSet set = statement.executeQuery("SELECT * FROM MOVIES WHERE ID = " + id);
+        if (set.next())
+            return new Movie(
+                    set.getInt("id"),
+                    set.getString("title"),
+                    set.getDate("release_date"),
+                    set.getInt("duration"),
+                    set.getInt("score")
+            );
         return new Movie(
                 -1,
                 "",
@@ -97,8 +97,8 @@ public class DAO {
 
     public static Movie getMovie(Connection db, String title) throws SQLException {
         Statement statement = db.createStatement();
-        ResultSet set = statement.executeQuery("SELECT * FROM MOVIE WHERE TITLE LIKE '" + title + "'");
-        if(set.next())
+        ResultSet set = statement.executeQuery("SELECT * FROM MOVIES WHERE TITLE LIKE '" + title + "'");
+        if (set.next())
             return new Movie(
                     set.getInt("id"),
                     set.getString("title"),
@@ -118,7 +118,7 @@ public class DAO {
     public static Movie interrogateForMovie(Connection db, String query) throws SQLException {
         Statement statement = db.createStatement();
         ResultSet set = statement.executeQuery(query);
-        if(set.next())
+        if (set.next())
             return new Movie(
                     set.getInt("id"),
                     set.getString("title"),
@@ -136,23 +136,63 @@ public class DAO {
     }
 
     public static void insertMovie(Connection db, Movie newObj) throws SQLException {
-        Statement statement = db.createStatement();
-        String createSql = "INSERT INTO movie VALUES (?, ?, ?, ?, ?)";
+        String createSql = "INSERT INTO movies (title, release_date, duration, score) VALUES (?, ?, ?, ?)";
         var createStmt = db.prepareStatement(createSql);
-        createStmt.setInt(1, newObj.getId());
-        createStmt.setString(2, newObj.getTitle());
-        createStmt.setDate(3, newObj.getReleaseDate());
-        createStmt.setInt(4, newObj.getDuration());
-        createStmt.setInt(5, newObj.getScore());
+        createStmt.setString(1, newObj.getTitle());
+        createStmt.setDate(2, newObj.getReleaseDate());
+        createStmt.setInt(3, newObj.getDuration());
+        createStmt.setDouble(4, newObj.getScore());
         try {
             createStmt.execute();
-        } catch (SQLIntegrityConstraintViolationException e) {
-            if (DAO.getMovie(db, newObj.getId()).getTitle().equals(newObj.getTitle())) {
-                System.err.println("Object is already in table.");
-            } else {
-                throw e;
-            }
+        } catch (SQLiteException e) {
+            if (e.getResultCode() == SQLiteErrorCode.SQLITE_CONSTRAINT_UNIQUE)
+                System.err.println("Movie named " + newObj.getTitle() + " is already in table.");
+            else throw e;
         }
     }
 
+
+    public static void insertActor(Connection db, Actor newObj) throws SQLException {
+        String createSql = "INSERT INTO actors (name,surname, age, popularity) VALUES (?, ?, ?, ?)";
+        var createStmt = db.prepareStatement(createSql);
+        createStmt.setString(1, newObj.getFamilyName());
+        createStmt.setString(2, newObj.getSurname());
+        createStmt.setInt(3, newObj.getAge());
+        createStmt.setDouble(4, newObj.getPopularity());
+        try {
+            createStmt.execute();
+        } catch (SQLiteException e) {
+            if (e.getResultCode() == SQLiteErrorCode.SQLITE_CONSTRAINT_UNIQUE)
+                System.err.println("Actor named " + newObj.getFamilyName() + " is already in table.");
+            else throw e;
+        }
+    }
+
+    public static void insertDirector(Connection db, Director newObj) throws SQLException {
+        String createSql = "INSERT INTO directors (name,surname, age, popularity) VALUES (?, ?, ?, ?)";
+        var createStmt = db.prepareStatement(createSql);
+        createStmt.setString(1, newObj.getFamilyName());
+        createStmt.setString(2, newObj.getSurname());
+        createStmt.setInt(3, newObj.getAge());
+        createStmt.setDouble(4, newObj.getRating());
+        try {
+            createStmt.execute();
+        } catch (SQLiteException e) {
+            if (e.getResultCode() == SQLiteErrorCode.SQLITE_CONSTRAINT_UNIQUE)
+                System.err.println("Director named " + newObj.getFamilyName() + " is already in table.");
+            else throw e;
+        }
+    }
+
+    public static void insertActorProduction(Connection db, int id_movie, int id_actor) {
+        String createSql = "INSERT INTO actorProduction VALUES (?, ?)";
+        try {
+            var createStmt = db.prepareStatement(createSql);
+            createStmt.setInt(1, id_movie);
+            createStmt.setInt(2, id_actor);
+            createStmt.execute();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
 }
