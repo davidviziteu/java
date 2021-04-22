@@ -1,7 +1,6 @@
-package entities;
+package Entities;
 
 import javax.persistence.*;
-import java.util.Objects;
 
 @Entity
 @Table(name = "directors", schema = "main", catalog = "")
@@ -66,12 +65,25 @@ public class DirectorsEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+
         DirectorsEntity that = (DirectorsEntity) o;
-        return age == that.age && Objects.equals(id, that.id) && Objects.equals(name, that.name) && Objects.equals(surname, that.surname) && Objects.equals(rating, that.rating);
+
+        if (age != that.age) return false;
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (name != null ? !name.equals(that.name) : that.name != null) return false;
+        if (surname != null ? !surname.equals(that.surname) : that.surname != null) return false;
+        if (rating != null ? !rating.equals(that.rating) : that.rating != null) return false;
+
+        return true;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, surname, age, rating);
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result + (surname != null ? surname.hashCode() : 0);
+        result = 31 * result + (int) age;
+        result = 31 * result + (rating != null ? rating.hashCode() : 0);
+        return result;
     }
 }

@@ -1,7 +1,6 @@
-package entities;
+package Entities;
 
 import javax.persistence.*;
-import java.util.Objects;
 
 @Entity
 @Table(name = "movies", schema = "main", catalog = "")
@@ -66,12 +65,25 @@ public class MoviesEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+
         MoviesEntity that = (MoviesEntity) o;
-        return Objects.equals(id, that.id) && Objects.equals(title, that.title) && Objects.equals(releaseDate, that.releaseDate) && Objects.equals(duration, that.duration) && Objects.equals(score, that.score);
+
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (title != null ? !title.equals(that.title) : that.title != null) return false;
+        if (releaseDate != null ? !releaseDate.equals(that.releaseDate) : that.releaseDate != null) return false;
+        if (duration != null ? !duration.equals(that.duration) : that.duration != null) return false;
+        if (score != null ? !score.equals(that.score) : that.score != null) return false;
+
+        return true;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, title, releaseDate, duration, score);
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (title != null ? title.hashCode() : 0);
+        result = 31 * result + (releaseDate != null ? releaseDate.hashCode() : 0);
+        result = 31 * result + (duration != null ? duration.hashCode() : 0);
+        result = 31 * result + (score != null ? score.hashCode() : 0);
+        return result;
     }
 }

@@ -5,102 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cf70ea3-d7d0-492d-8972-f770b7b953f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/Model/Actors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab8/src/main/java/Model/Directors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/lab9_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/lab9_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/25a641e7-fe64-4bc1-ba51-adcd05f48708.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/25a641e7-fe64-4bc1-ba51-adcd05f48708/storage_v2/_src_/schema/main.uQUzAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/25a641e7-fe64-4bc1-ba51-adcd05f48708/storage_v2/_src_/schema/main.uQUzAA.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ejb_javax_ejb_api_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_4_29_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_29_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_27_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_2_3_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_34_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/identifier.sqlite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab9.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compulsory/EntityManagerSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/compulsory/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/ActorsEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/DirectorsEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/GenresEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/MoviesEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compulsory/EntityManagerSingleton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/compulsory/test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/entities/ActorsEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/entities/DirectorsEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/entities/GenresEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/entities/MoviesEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/ANONYMOUS.TYQsKQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/APEX_040000.wQEqxw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/APEX_PUBLIC_USER.RAwPVQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/APPQOSSYS.2YFpMg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/CTXSYS.Rqsddw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/C__STUDENT.2PgmIw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/DBSNMP.vILSdw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/DIP.awgBAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/FLOWS_FILES.fVK5Fw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/HR.CgkAAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/MDSYS.tj1dBA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/ORACLE_OCM.uGKsng.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/PUBLIC.aaZQjQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/SYS.rUIBAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/SYSTEM.L2avkg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/.idea/dataSources/c48cb83c-b58f-4eae-af71-53ad0c6ba92a/storage_v2/_src_/schema/XDB.1lIBAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/src/main/java/Model/Actor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/src/main/java/Model/Director.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/src/main/java/Model/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/src/main/java/Model/Genres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/src/main/java/Model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/src/main/java/Model/Movies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/src/main/java/compulsory/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/src/main/java/compulsory/DAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab8/src/main/java/compulsory/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/src/main/java/compulsory/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/src/main/java/compulsory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/src/main/java/compulsory/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/target/classes/Model/Actor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/target/classes/Model/Director.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/target/classes/Model/Genre.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/target/classes/Model/Movie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/target/classes/compulsory/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/target/classes/compulsory/DAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/target/classes/compulsory/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/target/classes/compulsory/DataBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/target/classes/compulsory/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/target/classes/compulsory/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/lab9_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/lab9_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/090ee970-4d6d-4bce-82b6-d354580c98a0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/090ee970-4d6d-4bce-82b6-d354580c98a0/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/090ee970-4d6d-4bce-82b6-d354580c98a0/storage_v2/_src_/schema/main.uQUzAA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_11_5_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/JPA_1_0_JPA_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab9.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab9.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/byte-buddy-1.10.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/classmate-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/dom4j-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hibernate-core-5.4.11.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jandex-2.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javaee.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/stax-ex-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/txw2-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/compulsory/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compulsory/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/ActorsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/ActorsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/DirectorsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/DirectorsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/GenresEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/GenresEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/MoviesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/MoviesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/compulsory/EntityManagerSingleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compulsory/EntityManagerSingleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/compulsory/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compulsory/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/ActorsEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/ActorsEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/DirectorsEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/DirectorsEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/GenresEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/GenresEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/MovieEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/MoviesEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entities/MoviesEntity.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,13 +116,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -187,6 +144,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619032812321</updated>
       <workItem from="1619032815503" duration="1086000" />
+      <workItem from="1619071243199" duration="335000" />
     </task>
     <servers />
   </component>
@@ -203,6 +161,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
