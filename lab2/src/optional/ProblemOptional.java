@@ -16,6 +16,18 @@ public class ProblemOptional {
     ArrayList<SourceAbstract> sources = new ArrayList<>();
     ArrayList<Destination> destinations = new ArrayList<>();
 
+    public void setSources(ArrayList<SourceAbstract> sources) {
+        this.sources = sources;
+    }
+
+    public void setDestinations(ArrayList<Destination> destinations) {
+        this.destinations = destinations;
+    }
+
+    public int[][] getCostMatrix() {
+        return costMatrix;
+    }
+
     int[][] costMatrix;
 
     /**
