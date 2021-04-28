@@ -1,14 +1,16 @@
-package compulsory;
-
-
 import Model.Actor;
 import Model.Director;
 import Model.Genre;
 import Model.Movie;
+import compulsory.DAO;
+import compulsory.DataBase;
 import optional.HtmlGenerator;
 
 import java.sql.Date;
 import java.sql.SQLException;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.stream.IntStream;
 
 public class Main {
     static public void main(String[] args) throws SQLException {
@@ -57,17 +59,26 @@ public class Main {
 //                db,
 //                new Director("Nume2", "prenume2", 16, 1.1)
 //        );
+
+
         //optional html generator
-//        DAO.getAllDirectors(db);
-//        DAO.getAllMovies(db);
-//        DAO.getAllGeneres(db);
-//        DAO.getAllActors(db);
         HtmlGenerator.toMarkUp(
                 DAO.getAllMovies(db),
                 DAO.getAllGeneres(db),
                 DAO.getAllActors(db),
                 DAO.getAllDirectors(db)
         );
+
+
+        //bonus
+        ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(10);
+
+        IntStream.range(0, 10000).forEach(i -> {
+            DAO.getAllMovies(db);
+            DAO.getAllGeneres(db);
+            DAO.getAllActors(db);
+            DAO.getAllDirectors(db);
+        });
     }
 
 }
