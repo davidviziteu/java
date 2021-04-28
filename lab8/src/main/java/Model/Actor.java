@@ -47,4 +47,14 @@ public class Actor {
     public double getPopularity() {
         return popularity;
     }
+
+    @Override
+    public String toString() {
+        return "Actor{" +
+                "familyName='" + familyName + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", popularity=" + popularity +
+                '}';
+    }
 }

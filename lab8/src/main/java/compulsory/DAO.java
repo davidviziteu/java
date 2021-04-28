@@ -6,7 +6,10 @@ import Model.Genre;
 import Model.Movie;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
+import com.sun.xml.bind.v2.runtime.reflect.Lister;
 import org.sqlite.SQLiteErrorCode;
 import org.sqlite.SQLiteException;
 
@@ -169,7 +172,7 @@ public class DAO {
     }
 
     public static void insertDirector(Connection db, Director newObj) throws SQLException {
-        String createSql = "INSERT INTO directors (name,surname, age, popularity) VALUES (?, ?, ?, ?)";
+        String createSql = "INSERT INTO directors (name,surname, age, rating) VALUES (?, ?, ?, ?)";
         var createStmt = db.prepareStatement(createSql);
         createStmt.setString(1, newObj.getFamilyName());
         createStmt.setString(2, newObj.getSurname());
@@ -194,5 +197,92 @@ public class DAO {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+    }
+
+    public static ArrayList<Director> getAllDirectors(Connection db) {
+        ArrayList<Director> finalResult = new ArrayList<>();
+        try {
+            Statement statement = db.createStatement();
+            ResultSet set = null;
+            set = statement.executeQuery("SELECT * FROM DIRECTORS");
+            while (set.next()) {
+                finalResult.add(
+                        new Director(
+                                set.getString(1),
+                                set.getString(2),
+                                set.getInt(3),
+                                set.getDouble(4)
+                        )
+                );
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return finalResult;
+    }
+
+    public static ArrayList<Movie> getAllMovies(Connection db) {
+        ArrayList<Movie> finalResult = new ArrayList<>();
+        try {
+            Statement statement = db.createStatement();
+            ResultSet set = null;
+            set = statement.executeQuery("SELECT * FROM MOVIES");
+            while (set.next()) {
+                finalResult.add(
+                        new Movie(
+                                set.getInt(1),
+                                set.getString(2),
+                                set.getDate(3),
+                                set.getInt(4),
+                                (int) set.getDouble(5)
+                        )
+                );
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return finalResult;
+    }
+
+    public static ArrayList<Genre> getAllGeneres(Connection db) {
+        ArrayList<Genre> finalResult = new ArrayList<>();
+        try {
+            Statement statement = db.createStatement();
+            ResultSet set = null;
+            set = statement.executeQuery("SELECT * FROM genres");
+            while (set.next()) {
+                finalResult.add(
+                        new Genre(
+                                set.getInt(1),
+                                set.getString(2)
+                        )
+                );
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return finalResult;
+    }
+
+    public static ArrayList<Actor> getAllActors(Connection db) {
+        ArrayList<Actor> finalResult = new ArrayList<>();
+        try {
+            Statement statement = db.createStatement();
+            ResultSet set = null;
+            set = statement.executeQuery("SELECT * FROM actors");
+            while (set.next()) {
+                finalResult.add(
+                        new Actor(
+                                set.getString(2),
+                                set.getString(3),
+                                set.getInt(4),
+                                (int) set.getDouble(5)
+                        )
+                );
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return finalResult;
     }
 }

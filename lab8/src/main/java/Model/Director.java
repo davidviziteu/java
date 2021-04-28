@@ -48,4 +48,14 @@ public class Director {
     public double getRating() {
         return rating;
     }
+
+    @Override
+    public String toString() {
+        return "Director{" +
+                "familyName='" + familyName + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", rating=" + rating +
+                '}';
+    }
 }

@@ -22,6 +22,8 @@ public class DataBase {
 
     }
 
+    private DataBase(){}
+
     public void test(String name) {
         try {
             Statement stmt = db.createStatement();
