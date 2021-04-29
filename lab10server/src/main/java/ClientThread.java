@@ -23,6 +23,7 @@ public class ClientThread extends Thread {
                 response = "";
                 if (request.contains("stop")) {
                     response = "Server stopped!";
+                    Server.stopServer();
                 } else {
                     response = "Server received the request : " + request;
                 }
