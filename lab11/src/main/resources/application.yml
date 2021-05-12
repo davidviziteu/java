@@ -1,0 +1,11 @@
+server:
+  port: 7777
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    password: david
+    url: jdbc:postgresql://localhost:5432/lab10
+    username: postgres
