@@ -5,7 +5,7 @@ import java.net.SocketTimeoutException;
 
 public class Server {
     static final
-    public int PORT = 8100;
+    public int PORT = 8888;
 
     static
     public void stopServer() {
