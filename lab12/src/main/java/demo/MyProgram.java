@@ -30,6 +30,13 @@ public class MyProgram {
         throw new RuntimeException("Crash");
     }
 
-    public static void m8() {
+    @Test
+    public static void m8(int arg1) {
+        throw new RuntimeException("Crash args");
+    }
+
+    @Test
+    private static void m9(int arg12) {
+        throw new RuntimeException("Crash args private");
     }
 }
