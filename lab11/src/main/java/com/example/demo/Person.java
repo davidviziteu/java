@@ -1,4 +1,4 @@
-package compulrosy;
+package com.example.demo;
 
 import lombok.Getter;
 import lombok.Setter;

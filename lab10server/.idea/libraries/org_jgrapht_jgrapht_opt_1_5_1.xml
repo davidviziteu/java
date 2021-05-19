@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="org.jgrapht:jgrapht-opt:1.5.1" type="repository">
+    <properties maven-id="org.jgrapht:jgrapht-opt:1.5.1" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jgrapht/jgrapht-opt/1.5.1/jgrapht-opt-1.5.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jgrapht/jgrapht-core/1.5.1/jgrapht-core-1.5.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/jheaps/jheaps/0.13/jheaps-0.13.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/it/unimi/dsi/fastutil/8.5.2/fastutil-8.5.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
